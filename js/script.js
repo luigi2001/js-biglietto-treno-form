@@ -32,8 +32,10 @@ invia.addEventListener('click', function() {
         prezzo = somma - scontoMi;
     } else if (eta == 'under65'){
         prezzo = somma - scontoMa;
-    } else{
+    } else if(eta == 'maggiorenne')  {
         prezzo = somma;
+    }else{
+        alert('compila il campo fascia età');
     }
 
     var prezzoFinale = prezzo.toFixed (2);
@@ -43,5 +45,28 @@ invia.addEventListener('click', function() {
 
     document.getElementById('offerta').innerHTML = 'sconto ' + eta;
 
-    var randomCarozza = Math.floor(Math.random() * )
+    var randomCarozza = Math.floor(Math.random() * 8) + 1;
+    console.log(randomCarozza);
+
+    var randomCp = Math.floor(Math.random() * 10000) + 90000;
+    console.log(randomCp);
+
+    document.getElementById('carozza').innerHTML = randomCarozza;
+
+    document.getElementById('codice').innerHTML = randomCp;
+
+    document.getElementById('costo').innerHTML = prezzoFinale + ' Euro';
+
+})
+
+annulla.addEventListener('click', function(){
+
+    document.getElementById('biglietto').className = 'hidden';
+
+    var nome = document.getElementById('nome_cognome').value = ' ';
+
+    var km = document.getElementById('Km').value = ' ';
+
+    var eta = document.getElementById('eta').value = ' ';
+
 })
