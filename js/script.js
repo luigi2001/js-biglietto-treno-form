@@ -65,8 +65,8 @@ annulla.addEventListener('click', function(){
 
     var nome = document.getElementById('nome_cognome').value = ' ';
 
-    var km = document.getElementById('Km').value = ' ';
+    var km = document.getElementById('Km').value = '';
 
-    var eta = document.getElementById('eta').value = ' ';
+    var eta = document.getElementById('eta').value = '';
 
 })
