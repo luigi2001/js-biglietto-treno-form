@@ -20,7 +20,28 @@ invia.addEventListener('click', function() {
 
     /* calcolo prezzo biglietto */
 
-    var prezzo = 
+    var somma = 0.21 * km;
 
+    var scontoMi = somma * 20 / 100;
 
+    var scontoMa = somma * 40 / 100;
+
+    var prezzo;
+
+    if (eta == 'minorenne'){
+        prezzo = somma - scontoMi;
+    } else if (eta == 'under65'){
+        prezzo = somma - scontoMa;
+    } else{
+        prezzo = somma;
+    }
+
+    var prezzoFinale = prezzo.toFixed (2);
+    console.log(prezzoFinale);
+
+    document.getElementById('nomepasseggiero').innerHTML = nome;
+
+    document.getElementById('offerta').innerHTML = 'sconto ' + eta;
+
+    var randomCarozza = Math.floor(Math.random() * )
 })
