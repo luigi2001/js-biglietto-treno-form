@@ -13,7 +13,36 @@
 
         <h1>calcola il prezzo del tuo biglietto</h1>
         
-        <div id=""></div>
+        <div id="box">
+            <div id="form">
+                <div class="input">
+                    <label for="nome_cognome">Nome Cognome</label> <br>
+                    <input type="text" id="nome_cognome">
+                </div>
+                
+                <div class="input">
+                    <label for="Km">Km da percorrere</label> <br>
+                    <input type="number" id="Km">
+                </div>
+    
+                <div class="input">
+                    <label for="eta">Fascia d'età</label> <br>
+                    <select id="eta">
+                        <option value="vuoto"> </option>
+                        <option value="minorenne">minorenne</option>
+                        <option value="maggiorenne">maggiorenne</option>
+                        <option value="under65">under65</option>
+                    </select>
+                </div>
+    
+            </div>
+    
+            <div id="btn_container">
+                <button id="btn_invia">Genera</button>
+                <button id="btn_annulla">Annulla</button>
+            </div>
+        </div>
+
         
     </div>
     

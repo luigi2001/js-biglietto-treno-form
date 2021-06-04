@@ -13,11 +13,44 @@ body{
     height: 500px;
     background-color: red;
     margin: 20px auto;
-    padding: 20px;
+    padding: 60px;
 }
 
 #container h1{
     color: white;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 15px;
+}
+
+#box{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    color: red;
+}
+
+#form{
+    display: flex;
+}
+
+#form label{
+    display: block;
+}
+
+.input{
+    width: calc(100% / 3);
+    margin: 5px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#btn_container{
+    text-align: center;
+}
+
+#btn_container button{
+    font-size: 25px;
+    margin-right: 20px;
+    color: red;
 }
