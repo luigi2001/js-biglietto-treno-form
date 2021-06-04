@@ -30,7 +30,7 @@ invia.addEventListener('click', function() {
 
     if (eta == 'minorenne'){
         prezzo = somma - scontoMi;
-    } else if (eta == 'under65'){
+    } else if (eta == 'over65'){
         prezzo = somma - scontoMa;
     } else if(eta == 'maggiorenne')  {
         prezzo = somma;
@@ -41,7 +41,7 @@ invia.addEventListener('click', function() {
     var prezzoFinale = prezzo.toFixed (2);
     console.log(prezzoFinale);
 
-    document.getElementById('nomepasseggiero').innerHTML = nome;
+    document.getElementById('nomepasseggero').innerHTML = nome.charAt(0).toUpperCase()+ nome.slice(1);
 
     document.getElementById('offerta').innerHTML = 'sconto ' + eta;
 
